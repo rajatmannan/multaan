@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About | Multaan</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="About Multaan. Everything About the brand history and Future.">
+        <meta name="keyword" content="multani, mitti, multaan, aryan, sharma, orginal, genuine">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/3413927b1a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="head">
+            <button id="hamClick" onclick="mainOpen()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button id="closeBtn" onclick="mainClose()">
+                <span>X</span>
+            </button>
+            <h1>Multaan</h1>
+            <a href="https://www.instagram.com/multaan.01?igsh=MTZoMjhwaGVxOXZnMg%3D%3D&utm_source=qr"><i class="fa-solid fa-cart-shopping"></i></a>
+        </header>
+        <nav id="main-menu">
+            <a href="index.html">Home</a>
+            <a href="https://www.instagram.com/multaan.01/?igsh=MTZoMjhwaGVxOXZnMg%3D%3D&utm_source=qr">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <script>
+            var btn = document.getElementById('main-menu');
+            var btn1 = document.getElementById('hamClick');
+            var btn2 = document.getElementById('closeBtn');
+            function mainOpen() {
+                btn.style.height = "100vh";
+                btn1.style.display = "none";
+                btn2.style.display = "flex";
+            }
+            function mainClose() {
+                btn.style.height = "0vh";
+                btn1.style.display = "flex";
+                btn2.style.display = "none";
+            }
+        </script>
+        <div id="contactBase">
+            <h1 style="margin: 248px;">Under Development</h1>
+        </div>
+        <footer id="foot">
+            <div id="links">
+                <div>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Explore Products</a>
+                </div>
+                <div>
+                    <a href="#">Know more about Brand</a>
+                    <a href="#">Brand Mission</a>
+                </div>                               
+            </div>
+            <div id="social">
+                <a href="https://www.youtube.com/@MuLTaanbyAryanSharma"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/multaan.01/?igsh=MTZoMjhwaGVxOXZnMg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <h1>MULTAAN</h1>
+            <div id="tags">
+                <p>© All Right Reserveds</p>
+                <p>Multaan by Aryan Sharma</p>
+                <p>Designed & Development: <a href="https//mannancomputers.com">Mannan Computers</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
