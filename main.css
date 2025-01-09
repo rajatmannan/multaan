@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Rancho&display=swap');
+* {
+    margin: 0;
+}
+#head {
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    background: #ecdecb;
+    box-shadow: 1px 1px 6px #888;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+#hamClick {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    background: none;
+    border: none;
+    align-items: center;
+    transition: 1s ease-in-out;
+    width: 33.3%;
+}
+#closeBtn {
+    display: none;
+    flex-direction: column;
+    height: 40px;
+    background: none;
+    border: none;
+    align-items: center;
+    transition: 1s ease-in-out;
+    width: 33.3%;
+}
+#hamClick span {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #000;
+    margin-top: 8px;
+    align-self: center;
+    margin-left: 18px;
+}
+#closeBtn span {
+    margin-top: 8px;
+    align-self: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 18px;
+    font-size: 36px;
+    font-weight: 400;
+}
+#head h1 {
+    text-align: center;
+    font-family: "Rubik Dirt", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 33.3%;
+}
+#head a {
+    color: #000;
+    width: 33.3%;
+    font-size: 30px;
+    text-align: center;
+}
+#main-menu {
+    position: fixed;
+    width: 100%;
+    background: #f8ead6;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    height: 0vh;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    z-index: 4;
+}
+#main-menu a {
+    color: #000;
+    text-decoration: none;
+    font: 36px Verdana;
+    transition: 0.6s ease-in-out;
+    margin: 20px 0px 0px 40px;
+}
+#main-menu a:nth-child(1) {
+    margin-top: 148px;
+}
+@media screen and (min-width:720px) {
+    #head {
+        height: 12vh;
+        justify-content: space-around;
+    }
+}
+#base1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: url(../graphics/base1-cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 9vh;
+} 
+.vo {
+    display: none;
+}  
+#base1-panel {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10%;
+    background: #c4b6a4;
+    color: #3e0d0d;
+    height: 55vh;
+    align-items: center;
+}
+#base1-panel h2 {
+    font-size: 36px;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#base1-panel img {
+    width: 80%;
+    margin: 25px 0px;
+}
+#base1-head {
+    font-size: 36px;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#base1-panel h4 {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#base1-panel a {
+    background: #000;
+    color: #fff;
+    font: 28px Verdana;
+    text-decoration: none;
+    text-align: center;
+    width: 70%;
+    align-self: center;
+    box-shadow: 1px 1px 6px #888;
+    margin: 50px 0px 0px 0px;
+}
+@media screen and (min-width: 720px) {
+    .vo {
+        display: block;
+    }
+    #base1 {
+        background: #c4b6a4;
+        margin-top: 12vh;
+    }
+    #base1-panel {
+        width: 100%;
+        margin: 0;
+    }
+    #base1-panel h2 {
+        font-size: 36px;
+        margin-top: 20%;
+    }
+    #base1-panel img {
+        width: 75%;
+    }
+    #base1-panel a {
+        width: 40%;
+        line-height: 1.5;
+    }
+    #base1-panel a i {
+        color: #888;
+        font-size: 18px;
+    }
+}
+#base2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #f3c9a7;
+}
+#base2 h1 {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3e0d0d;
+    font-size: 42px;
+    margin: 42px 0px 0px 42px;
+}
+#base2 h5 {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 88px;
+}
+#listings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.listing {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 40vh;
+    background: url(../graphics/temp.jpg);
+    backdrop-filter: grayscale();
+    align-self: center;
+    border: 8px solid #fff;
+    margin: 40px 0px;
+    box-shadow: 2px 2px 6px #777;
+}
+.listing h3 {
+    text-align: center;
+    font: 20px verdana;
+    color: #3e0d0d;
+    font-weight: 600;
+}
+.listing a {
+    align-self: center;
+    background: #fff;
+    font: 24px Verdana;
+    color: rgb(172, 96, 10);
+    margin-top: 180px;
+    padding: 16px;
+}
+@media screen and (min-width: 720px) {
+    #listings {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .listing {
+        width: 20%;
+    }
+}
+#base3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#base3 h2 {
+    text-align: center;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #3e0d0d;
+    margin-top: 48px;   
+}
+#base3 p {
+    font-family: Calibri;
+    color: #888;
+    text-align: center;
+    padding: 28px;
+    line-height: 1.5;
+}
+@media screen and (min-width: 720px) {
+    #base3 p {
+        width: 60%;
+        align-self: center;
+    }
+}
+#foot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #f3c9a7;
+}
+#links {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+}
+#links div {
+    display: flex;
+    flex-direction: column;
+}
+#links div a {
+    font: 16px Calibri;
+    color: #444;
+    line-height: 1.5;
+    padding: 8px;
+}
+#social {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#social a {
+    margin: 28px;
+    font-size: 52px;
+    color: #3e0d0d;
+}
+#tags {
+    display: flex;
+    flex-direction: column;
+    background: #b98961;
+    align-items: center;
+    font-family: calibri;
+}
+#tags a {
+    color: #444;
+}
+#foot h1 {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 52px;
+    text-align: center;
+    color: #3e0d0d;
+    margin-top: 48;
+}
+#aboutBase {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#aboutBase h1 {
+    color: #3e0d0d;
+    font-size: 32px;
+    margin: 40% 10% 15%;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;   
+}
+#aboutBase p {
+    font-size: 22px;
+    color: #444;
+    line-height: 1.5;
+    padding: 24px;
+}
+#plate {
+    display: flex;
+    width: 80%;
+    margin: 10%;
+    box-shadow: 2px 2px 6px #777;
+    background: #f2f2f2;
+    color: #444;
+}
+#plate img {
+    width: 48px;
+    border-radius: 48px;
+    margin: 18px;
+}
+#plate div {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+#place span {
+    line-height: 1.5;
+    font-size: 18px Calibri;
+}
+@media screen and (min-width: 720px) {
+    #aboutBase h1 {
+        margin-left: 15%;
+        margin-top: 12%;
+        font-size: 42px;
+        margin-bottom: 0;
+    }
+    #aboutBase p {
+        width: 50%;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+    #plate {
+        width: 300px;
+        margin-left: 40%;
+        margin-top: 0;
+    }
+    #hereprod {
+        width: 25%;
+        margin-top: -500px;
+        margin-left: 5%;
+    }
+}
